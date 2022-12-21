@@ -18,19 +18,19 @@ export default {
         {
           id: 1,
           title: 'LOREM',
-          discr: 'Lorem Lorem Lorem Lorem',
+          discr: 'Lorem Lorem Lorem Lorem Lorem',
           lvl: 4
         },
         {
           id: 2,
           title: 'Vector',
-          discr: 'Vector Vector Vector Vector',
+          discr: 'Vector Vector Vector Vector Vector',
           lvl: 3
         },
         {
           id: 3,
           title: 'Went',
-          discr: 'Went Went Went Went',
+          discr: 'Went Went Went Went Went Went',
           lvl: 2
         },
       ]
