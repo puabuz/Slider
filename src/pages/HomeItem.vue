@@ -17,7 +17,7 @@ export default {
       items: [
         {
           id: 1,
-          title: 'LOREM',
+          title: 'Ipsum',
           discr: 'Lorem Lorem Lorem Lorem Lorem',
           lvl: 4
         },
@@ -30,7 +30,7 @@ export default {
         {
           id: 3,
           title: 'Went',
-          discr: 'Went Went Went Went Went Went',
+          discr: 'Went Went Went Went Went Went ',
           lvl: 2
         },
       ]
