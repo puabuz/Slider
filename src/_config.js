@@ -16,11 +16,6 @@ export const links = [
       title: 'About',
       alias: 'about',
       url: '/about'
-    },
-    {
-      title: 'Vacancy',
-      alias: 'vacancy',
-      url: '/vacancy'
     }
 ];
 
