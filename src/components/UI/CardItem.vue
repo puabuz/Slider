@@ -6,6 +6,8 @@
     <span class="card-name">{{name}}</span>
     <span class="card-title">{{title}}</span>
     <div class="card-body">{{ body }}</div>
+
+    <router-link v-if="link" class="link" style="display:block" :to="link">See more</router-link>
   </div>
 </template>
 
@@ -29,6 +31,9 @@ export default{
       type: String,
       required: true,
     },
+    link: {
+      type: String,
+    }
   }
 }
 

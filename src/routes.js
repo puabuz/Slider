@@ -1,8 +1,8 @@
 import { createRouter, createWebHashHistory } from "vue-router";
 import Home from '../src/pages/HomeItem.vue'
 import About from '../src/pages/AboutItem.vue'
-import Vacancy from '../src/pages/VacancyItem.vue'
 import notFound from "../src/pages/notFound.vue"
+import Item from "../src/pages/_itemAlias.vue"
 
 const routerHistory = createWebHashHistory();
 
@@ -20,9 +20,9 @@ const routers = createRouter({
       component: About
     },
     {
-      path: '/vacancy',
-      name: "vacancy",
-      component: Vacancy
+      path: "/:itemAlias",
+      name: 'itemAlias',
+      component: Item
     },
     {
       path: "/:CatchAll(.*)",

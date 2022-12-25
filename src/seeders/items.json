@@ -1,6 +1,7 @@
 [
   {
     "id": 1,
+    "alias": "archer",
     "title": "Archer",
     "discr": "Archer Archer Archer",
     "img": "https://tocode.ru/static/uploads/courses/3/clash-of-clans-images/archer.png",
@@ -8,6 +9,7 @@
   },
   {
     "id": 2,
+    "alias": "barbarian",
     "title": "Barbarian",
     "discr": "Barbarian Barbarian ",
     "img": "https://tocode.ru/static/uploads/courses/3/clash-of-clans-images/barbarian.png",
@@ -15,6 +17,7 @@
   },
   {
     "id": 3,
+    "alias": "giant",
     "title": "Giant",
     "discr": "Giant Giant Giant",
     "img": "https://tocode.ru/static/uploads/courses/3/clash-of-clans-images/giant.png",
@@ -22,6 +25,7 @@
   },
   {
     "id": 3,
+    "alias": "goblin",
     "title": "Goblin",
     "discr": "Goblin Goblin Goblin",
     "img": "https://tocode.ru/static/uploads/courses/3/clash-of-clans-images/goblin.png",
@@ -29,6 +33,7 @@
   },
   {
     "id": 3,
+    "alias": "wizard",
     "title": "Wizard",
     "discr": "Wizard Wizard Wizard",
     "img": "https://tocode.ru/static/uploads/courses/3/clash-of-clans-images/wizard.png",
