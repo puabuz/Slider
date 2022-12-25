@@ -1,9 +1,10 @@
 $border-radius-size: 14px;
 
 .card {
+  background-color: rgba(181, 221, 224, 0.516);
   width: 300px;
   display: inline-block;
-  margin: auto;
+  margin: 10px;
   border-radius: $border-radius-size + 5;
   position: relative;
   text-align: center;
