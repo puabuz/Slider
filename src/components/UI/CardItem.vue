@@ -1,20 +1,23 @@
 <template>
   <div class="card">
     <div v-if="imgUrl" class="card-img__wrapper">
-      <img  :src="imgUrl" :alt="title" class="card-img">
+      <img :src="imgUrl" :alt="title" class="card-img">
     </div>
-    <span class="card-name">{{name}}</span>
-    <span class="card-title">{{title}}</span>
-    <div class="card-body">{{ body }}</div>
+    <span class="card-name">{{ name }}</span>
+    <span class="card-title">{{ title }}</span>
+    <div class="card-body">
+      <slot name="body"></slot>
 
-    <router-link v-if="link" class="link" style="display:block" :to="link">See more</router-link>
+      <router-link v-if="link" class="link" style="display:block" :to="link">See more</router-link>
+    </div>
+    <slot name="footer"></slot>
   </div>
 </template>
 
 
 <script>
 
-export default{
+export default {
   props: {
     name: {
       type: String,
