@@ -10,14 +10,9 @@
           <template v-slot:body>{{ item.descr }}</template>
 
           <template v-slot:footer>
-            <div class="card-stats">
-              <div v-for="(stat, index) in item.info" :key="index" class="one-third">
-                <div class="stat-value">{{ stat.value }}</div>
-                <div class="stat">{{ stat.title }}</div>
-              </div>
-            </div>
+           <CardFooter :item='item'/>
           </template>
-          
+
         </CardItem>
       </slide>
 
@@ -34,13 +29,16 @@ import CardItem from '@/components/UI/CardItem'
 import items from "@/seeders/items.js"
 import 'vue3-carousel/dist/carousel.css'
 import { Carousel, Slide, Navigation } from 'vue3-carousel'
+import CardFooter from '../components/UI/CardFooter.vue'
+
 
 export default {
   components: {
+    CardFooter,
     CardItem,
     Carousel,
     Slide,
-    Navigation,
+    Navigation
   },
 
   data() {
