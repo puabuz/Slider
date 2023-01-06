@@ -1,7 +1,7 @@
 import { createRouter, createWebHashHistory } from "vue-router";
 import Home from '../src/pages/HomeItem.vue'
 import About from '../src/pages/AboutItem.vue'
-import notFound from "../src/pages/notFound.vue"
+import notFound from "../src/components/notFound.vue"
 import Item from "../src/pages/_itemAlias.vue"
 
 const routerHistory = createWebHashHistory();
@@ -25,9 +25,10 @@ const routers = createRouter({
       component: Item
     },
     {
-      path: "/:CatchAll(.*)",
-      name: '404',
-      component: notFound
+      // path: "/:CatchAll(.*)",
+      path: '/:pathMatch(.*)*',
+      name: 'notFound',
+      component: notFound,
     },
   ]
 });

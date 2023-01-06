@@ -34,6 +34,7 @@ export default {
     }
   },
   created() {
+    
     const alias = this.$route.params.itemAlias;
     const item = items.find(el => el.alias === alias);
     this.item = item;

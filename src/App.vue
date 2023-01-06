@@ -18,7 +18,7 @@ import Footer from '@/components/FooterItem.vue'
 export default {
   components: {
     Header,
-    Footer
+    Footer,
   }
 }
 </script>

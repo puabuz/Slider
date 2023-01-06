@@ -16,7 +16,7 @@ export const links = [
       title: 'About',
       alias: 'about',
       url: '/about'
-    }
+    },
 ];
 
 export const app = {
