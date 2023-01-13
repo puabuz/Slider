@@ -34,10 +34,17 @@ export default {
     }
   },
   created() {
+
+    const alias = this.$route.params.itemAlias
     
-    const alias = this.$route.params.itemAlias;
-    const item = items.find(el => el.alias === alias);
-    this.item = item;
+    // find возвращает первый элемент по условию или undefined, если ничего не найдено.
+    const item = items.find(el => el.alias === alias)
+    if (item === undefined) {
+      return this.$router.push('/404')
+    } else {
+      this.item = item
+    }
+
   }
 }
 
@@ -47,7 +54,8 @@ export default {
 .wrapper-person {
   text-align: center;
 }
-.container{
+
+.container {
   max-width: 25em;
 }
 </style>
